@@ -1,3 +1,7 @@
+/* Broad First Search
+ * as to map, '.' means the path, '#' means the wall
+ */
+
 #include <iostream>
 #include <queue>
 
@@ -43,7 +47,7 @@ void around(Node n)
 			continue;
 		if(book[c.x][c.y])
 			continue;
-		if(map[c.x][c.y] == '#') {
+		if(map[c.x][c.y] != '.') {
 			book[c.x][c.y] = -1;
 			continue;
 		}
@@ -77,10 +81,10 @@ int main(void)
 	
 	for(i=0; i<20; i++) {
 		for(j=0;j<20;j++)
-			if(book[i][j])
+			if(map[i][j])
 				printf("%2d ", book[i][j]);
 		cout << endl;
-		if (!book[i][j]) break;
+		if (!map[i][j]) break;
 	}
 	
 	return 0;
