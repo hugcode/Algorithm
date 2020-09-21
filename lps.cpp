@@ -4,7 +4,7 @@
  *        dp[i][j] = 0 (if j>i, all items in bottom left of matrix)
  * Rec:   dp[i][j] = max(dp[i+1][j], dp[i][j-1])  if a[i]!=a[j]
  *        dp[i][j] = dp[i+1][j-1]+2               if a[i]==a[j] && dp[i+1][j-1] == j-i-1
- ^          (dp[i+1][j-1] == j-i-1) means that a[i+1,j-1] is palindrome 
+ *          (dp[i+1][j-1] == j-i-1) means that a[i+1,j-1] is palindrome 
  *        only need gothrouth the items in up right of matrix
  * Ans:   dp[0][n-1]
  */
