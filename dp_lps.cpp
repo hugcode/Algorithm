@@ -1,4 +1,4 @@
-/* Longest palindromic subsequence
+/* Longest Palindromic Subsequence
  * dp[i][j]: lps length within a[i,j], i is the left index, j is the right index 
  * Init:  dp[i][i] = 1 (0<=i<n)
  *        dp[i][j] = 0 (if j>i, all items in bottom left of matrix)
