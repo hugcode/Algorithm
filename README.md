@@ -1,1 +1,1 @@
-# Dynamic Programming code examples
+# Algorithm examples
