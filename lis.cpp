@@ -1,4 +1,4 @@
-/* 
+/* Longest Increasing Subsequence
  * dp[i]: lis end at index i 
  * Init:  dp[i] = 1
  * Rec:   dp[i] = dp[j] + 1 if a[j] < a[i]  (0<= j < i < len)
