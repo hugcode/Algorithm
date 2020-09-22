@@ -1,4 +1,4 @@
-/* 
+/* Longest Common Subsequence
  * dp[i][j]: lcs at a[i]b[j] 
  * Init:  dp[0][j] = 0 (0<=j<=n)
  *        dp[i][0] = 0 (0<=i<=n)
