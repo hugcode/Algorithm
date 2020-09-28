@@ -1,6 +1,6 @@
 /* 0-1 knapsack problem
  * Given weights and values of n items, put these items in a knapsack of capacity c
- * to get the maximum total value in the knapsack 
+ * to get the maximum total value in the knapsack, each item can be used 0 or 1 time 
  * dp[i][j] 0<=i<=n, 0<=j<=c 
  * Init: dp[i][j] = 0                                        if i == 0  (n is zero)
  *                = 0                                        if j == 0  (c is zero)
