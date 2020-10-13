@@ -30,10 +30,7 @@ int main(void)
     
     n = sizeof(w)/sizeof(int);
 
-
     /* Two-dimensional array */
-    for (i=0; i<=n; i++)
-        dp[i][0] = 0;
     for (j=0; j<=c; j++)
         dp[0][j] = 0;
 
