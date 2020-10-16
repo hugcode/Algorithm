@@ -4,6 +4,7 @@ using namespace std;
 
 string str;
 int cur;
+int mod = 10000;
 
 unsigned int get_num()
 {
@@ -20,8 +21,8 @@ unsigned int get_num()
 
 int main(void)
 {
-    unsigned long long sum;
-    unsigned long long tmp;
+    int sum;
+    int tmp;
 
     cin >> str;
 
@@ -37,9 +38,10 @@ int main(void)
         }
         cur++;
         sum += tmp;
+        sum %= mod;
     }
 
-    cout << sum << endl;
+    cout << sum%mod << endl;
 
     return 0;
 }
