@@ -7,33 +7,32 @@ string	role[100005];
 
 int main(void)
 {
-	int i, n, m, cur;
-	int a, s, dir;
+    int i, n, m, cur;
+    int a, s, dir;
 
-	cin >> n >> m;
+    cin >> n >> m;
 
-	for(i=0; i<n; i++)
-	{
-		cin >> face[i] >> role[i];
-		if (face[i]==0)
-			face[i] = -1;
-	}
+    for(i=0; i<n; i++)
+    {
+        cin >> face[i] >> role[i];
+        if (face[i]==0)
+            face[i] = -1;
+    }
 
-	cur = 0;
-	for(i=0; i<m; i++)
-	{
-		cin >> a >> s;
+    cur = 0;
+    for(i=0; i<m; i++)
+    {
+        cin >> a >> s;
+        if (a==0)
+            a = -1;
 
-		if (a==0)
-			a = -1;
-
-		dir = a*face[cur]*(-1);
-		s  %= n;
+        dir = a*face[cur]*(-1);
+        s  %= n;
 
 		cur = (cur + n + dir*s) % n;
-	}
+    }
 
-	cout << role[cur];
+    cout << role[cur];
 
-	return 0;
+    return 0;
 }
