@@ -29,7 +29,7 @@ int main(void)
         dir = a*face[cur]*(-1);
         s  %= n;
 
-		cur = (cur + n + dir*s) % n;
+        cur = (cur + n + dir*s) % n;
     }
 
     cout << role[cur];
