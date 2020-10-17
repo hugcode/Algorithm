@@ -35,10 +35,10 @@ int main(void)
         {
             cur++;
             tmp *= get_num();
+            tmp %= mod;
         }
         cur++;
         sum += tmp;
-        sum %= mod;
     }
 
     cout << sum%mod << endl;
