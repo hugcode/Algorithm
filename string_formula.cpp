@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -35,6 +36,7 @@ int main(void)
     cin >> str;
     int num;
     long long var, con;
+    char name;
 
     cur = 0;
     var = 0;
@@ -46,6 +48,7 @@ int main(void)
 
         if (str[cur] >= 'a' && str[cur] <= 'z') 
         {
+            name = str[cur];
             var += num;    
             cur++;
         }
@@ -64,7 +67,8 @@ int main(void)
     var = 0 - var;
     
     //cout << "var " << var << " con " << con << endl;
-    printf("var=%.2f\n", (double)con/var);
+    if (con == 0) var=abs(var);
+    printf("%c=%.3f\n", name, (double)con/var);
 
     return 0;
 }
